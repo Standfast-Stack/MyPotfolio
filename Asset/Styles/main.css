@@ -1,0 +1,870 @@
+
+/* =====================================================
+   STANDFAST TONYE BLUEJACK
+   OIL & GAS FIELD OPERATOR PORTFOLIO
+   MAIN STYLESHEET
+===================================================== */
+
+
+/* 1. CSS VARIABLES */
+
+:root {
+    --navy: #0b1f35;
+    --navy-light: #173653;
+    --amber: #f2a900;
+    --amber-light: #ffc233;
+
+    --white: #ffffff;
+    --light: #f3f6f9;
+    --grey: #64748b;
+    --dark: #263445;
+
+    --border: #e1e7ee;
+
+    --shadow: 0 8px 25px rgba(11, 31, 53, 0.08);
+
+    --container-width: 1150px;
+}
+
+
+/* 2. GLOBAL RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    color: var(--dark);
+    background: var(--white);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+
+/* 3. REUSABLE LAYOUT */
+
+.container {
+    width: 90%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+section {
+    padding: 75px 0;
+}
+
+.section-heading {
+    margin-bottom: 35px;
+}
+
+.section-heading h2 {
+    color: var(--navy);
+    font-size: 29px;
+    margin-top: 5px;
+}
+
+.section-heading p {
+    color: var(--grey);
+    margin-top: 8px;
+}
+
+.eyebrow {
+    color: #b77d00;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+/* 4. NAVIGATION BAR */
+
+header {
+    background: var(--navy);
+    color: var(--white);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    min-height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.logo span {
+    color: var(--amber);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links a {
+    font-size: 13px;
+    color: #e2e8f0;
+    transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--amber);
+}
+
+.menu-toggle {
+    display: none;
+    border: none;
+    background: none;
+    color: var(--white);
+    font-size: 27px;
+    cursor: pointer;
+}
+
+
+/* 5. PAGE HERO */
+
+.page-hero {
+    background:
+        linear-gradient(
+            rgba(11, 31, 53, 0.94),
+            rgba(11, 31, 53, 0.94)
+        ),
+        linear-gradient(135deg, #173653, #0b1f35);
+
+    color: var(--white);
+    padding: 85px 0;
+    text-align: center;
+}
+
+.page-hero .eyebrow {
+    color: var(--amber);
+}
+
+.page-hero h1 {
+    font-size: 42px;
+    margin: 12px 0;
+}
+
+.page-hero p {
+    max-width: 760px;
+    margin: auto;
+    color: #d5dfeb;
+    font-size: 16px;
+}
+
+
+/* 6. BUTTONS */
+
+.button,
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: var(--amber);
+    color: var(--navy);
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button:hover,
+.btn:hover {
+    background: var(--amber-light);
+    transform: translateY(-2px);
+}
+
+.button.secondary,
+.btn-secondary {
+    background: var(--navy);
+    color: var(--white);
+}
+
+.button.secondary:hover,
+.btn-secondary:hover {
+    background: var(--navy-light);
+}
+
+
+/* 7. ABOUT PAGE */
+
+.about-intro {
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+    gap: 55px;
+    align-items: start;
+}
+
+.about-text p {
+    margin-bottom: 17px;
+    color: #526173;
+}
+
+.about-text strong {
+    color: var(--navy);
+}
+
+.profile-card {
+    background: var(--light);
+    padding: 30px;
+    border-radius: 12px;
+    border-top: 4px solid var(--amber);
+}
+
+.profile-card h3 {
+    color: var(--navy);
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+
+.profile-detail {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.profile-detail:last-child {
+    border-bottom: none;
+}
+
+.profile-detail small {
+    display: block;
+    color: var(--grey);
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.profile-detail span {
+    display: block;
+    color: var(--navy);
+    font-size: 14px;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+
+/* 8. HIGHLIGHT CARDS */
+
+.highlights {
+    background: var(--light);
+}
+
+.highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.highlight-card {
+    background: var(--white);
+    padding: 27px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+}
+
+.highlight-card .number {
+    color: #b77d00;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.highlight-card h3 {
+    color: var(--navy);
+    font-size: 17px;
+    margin: 8px 0;
+}
+
+.highlight-card p {
+    color: var(--grey);
+    font-size: 14px;
+}
+
+
+/* 9. PROFESSIONAL APPROACH */
+
+.approach-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.approach-item {
+    padding: 22px;
+    border-left: 4px solid var(--amber);
+    background: #f8fafc;
+}
+
+.approach-item h3 {
+    color: var(--navy);
+    margin-bottom: 7px;
+    font-size: 17px;
+}
+
+.approach-item p {
+    color: var(--grey);
+    font-size: 14px;
+}
+
+
+/* 10. PROJECT CARDS */
+
+.projects-section {
+    background: var(--light);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
+.project-top {
+    background: var(--navy);
+    padding: 25px 28px;
+    color: var(--white);
+    border-bottom: 4px solid var(--amber);
+}
+
+.project-top .project-type {
+    color: var(--amber);
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.project-top h3 {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-top: 7px;
+}
+
+.project-content {
+    padding: 25px 28px;
+}
+
+.project-content p {
+    color: var(--grey);
+    font-size: 14px;
+    margin-bottom: 17px;
+}
+
+.project-content h4 {
+    color: var(--navy);
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.project-content ul {
+    padding-left: 19px;
+    color: #526173;
+    font-size: 14px;
+}
+
+.project-content li {
+    margin-bottom: 7px;
+}
+
+.project-meta {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid var(--border);
+    font-size: 12px;
+    color: var(--grey);
+}
+
+.project-meta strong {
+    color: var(--navy);
+}
+
+
+/* 11. EXPERIENCE CARDS */
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.experience-item {
+    padding: 25px;
+    background: #f8fafc;
+    border-left: 4px solid var(--amber);
+}
+
+.experience-item h3 {
+    color: var(--navy);
+    font-size: 17px;
+    margin-bottom: 9px;
+}
+
+.experience-item p {
+    color: var(--grey);
+    font-size: 14px;
+}
+
+
+/* 12. PROFESSIONAL CONTRIBUTION */
+
+.contribution,
+.objective {
+    background: var(--navy);
+    color: var(--white);
+}
+
+.contribution h2,
+.objective h2 {
+    font-size: 29px;
+    margin-bottom: 15px;
+}
+
+.contribution-intro {
+    color: #d5dfeb;
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+.contribution-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.contribution-item {
+    padding: 22px;
+    border: 1px solid #35516c;
+    border-radius: 8px;
+}
+
+.contribution-item h3 {
+    color: var(--amber);
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.contribution-item p {
+    color: #d5dfeb;
+    font-size: 14px;
+}
+
+.objective {
+    text-align: center;
+}
+
+.objective p {
+    max-width: 800px;
+    margin: auto;
+    color: #d5dfeb;
+}
+
+
+/* 13. HSE NOTE */
+
+.hse-note {
+    background: #fff8e6;
+    border-left: 4px solid var(--amber);
+    padding: 22px 25px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.hse-note h3 {
+    color: var(--navy);
+    margin-bottom: 7px;
+    font-size: 17px;
+}
+
+.hse-note p {
+    color: #526173;
+    font-size: 14px;
+}
+
+
+/* 14. CONTACT PAGE */
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 45px;
+    align-items: start;
+}
+
+.contact-intro {
+    color: var(--grey);
+    margin-bottom: 25px;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 18px;
+    background: var(--light);
+    border-radius: 8px;
+    border-left: 4px solid var(--amber);
+}
+
+.contact-icon {
+    width: 42px;
+    height: 42px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--navy);
+    color: var(--amber);
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.contact-item h3 {
+    color: var(--navy);
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.contact-item p,
+.contact-item a {
+    color: var(--grey);
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+.contact-item a:hover {
+    color: #b77d00;
+}
+
+
+/* 15. CONTACT FORM */
+
+.contact-form {
+    background: var(--light);
+    padding: 32px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+}
+
+.contact-form h2 {
+    color: var(--navy);
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.contact-form > p {
+    color: var(--grey);
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    color: var(--navy);
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    background: var(--white);
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--amber);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+.submit-button {
+    width: 100%;
+    border: none;
+    padding: 14px;
+    background: var(--amber);
+    color: var(--navy);
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-button:hover {
+    background: var(--amber-light);
+}
+
+.form-note {
+    font-size: 12px;
+    color: var(--grey);
+    margin-top: 12px;
+}
+
+
+/* 16. AVAILABILITY SECTION */
+
+.availability {
+    background: var(--light);
+}
+
+.availability-content {
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+.availability-content h2 {
+    color: var(--navy);
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.availability-content p {
+    color: var(--grey);
+}
+
+.availability-tags {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.availability-tags span {
+    background: var(--white);
+    color: var(--navy);
+    border: 1px solid var(--border);
+    padding: 9px 16px;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* 17. CV SECTION */
+
+.cv-section {
+    text-align: center;
+}
+
+.cv-section h2,
+.cta h2 {
+    color: var(--navy);
+    font-size: 29px;
+    margin-bottom: 10px;
+}
+
+.cv-section p,
+.cta p {
+    max-width: 700px;
+    margin: auto;
+    color: var(--grey);
+}
+
+
+/* 18. FOOTER */
+
+footer {
+    background: #071626;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 13px;
+}
+
+footer span {
+    color: var(--amber);
+}
+
+
+/* 19. RESPONSIVE DESIGN - TABLETS */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        gap: 11px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+    .experience-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* 20. RESPONSIVE DESIGN - MOBILE */
+
+@media (max-width: 760px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background: var(--navy);
+        padding: 20px 5%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .page-hero {
+        padding: 65px 0;
+    }
+
+    .page-hero h1 {
+        font-size: 32px;
+    }
+
+    .section-heading h2,
+    .contribution h2,
+    .objective h2,
+    .cta h2,
+    .cv-section h2 {
+        font-size: 25px;
+    }
+
+    .about-intro,
+    .highlight-grid,
+    .approach-grid,
+    .project-grid,
+    .experience-grid,
+    .contribution-grid,
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form {
+        padding: 23px;
+    }
+
+    section {
+        padding: 55px 0;
+    }
+
+}
+
+
+/* 21. SMALL MOBILE SCREENS */
+
+@media (max-width: 400px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .page-hero h1 {
+        font-size: 28px;
+    }
+
+    .project-top,
+    .project-content {
+        padding: 20px;
+    }
+
+    .button,
+    .btn {
+        padding: 11px 18px;
+        font-size: 13px;
+    }
+
+}

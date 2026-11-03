@@ -1,0 +1,1151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Professional portfolio of Standfast Tonye Bluejack, an Oil and Gas Field Operator with over 7 years of industry experience.">
+
+    <meta name="keywords" content="Standfast Bluejack, Field Operator, Oil and Gas, Production Operations, Process Operator">
+
+    <meta name="author" content="Standfast Tonye Bluejack">
+
+    <title>Standfast Tonye Bluejack | Field Operator</title>
+
+    <style>
+        /* GENERAL STYLES */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f7fa;
+            color: #263445;
+            line-height: 1.7;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1150px;
+            margin: auto;
+        }
+
+        /* HEADER AND NAVIGATION */
+
+        header {
+            background: #071b35;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+        }
+
+        .navbar {
+            min-height: 75px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .logo span {
+            color: #e6a23c;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 13px;
+            color: #e5edf7;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #e6a23c;
+        }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+        }
+
+        /* HERO SECTION */
+
+        .hero {
+            background: linear-gradient(
+                115deg,
+                rgba(7, 27, 53, 0.98),
+                rgba(13, 57, 94, 0.91)
+            );
+            color: white;
+            padding: 100px 0;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1.4fr 0.8fr;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .hero-label {
+            color: #e6a23c;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-size: clamp(34px, 5vw, 55px);
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+
+        .hero h2 {
+            color: #e6a23c;
+            font-size: 22px;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .hero p {
+            color: #d8e3f0;
+            font-size: 16px;
+            max-width: 650px;
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 23px;
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-primary {
+            background: #e6a23c;
+            color: #071b35;
+        }
+
+        .btn-primary:hover {
+            background: #f4bb65;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border: 1px solid white;
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: #071b35;
+        }
+
+        .profile-placeholder {
+            width: 270px;
+            height: 310px;
+            margin: auto;
+            border: 4px solid #e6a23c;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #163c61;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #d8e3f0;
+            padding: 20px;
+        }
+
+        .profile-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* PROFESSIONAL HIGHLIGHTS */
+
+        .highlights {
+            background: white;
+            padding: 35px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+        }
+
+        .highlight-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+        .highlight-item h3 {
+            color: #0d3960;
+            font-size: 27px;
+        }
+
+        .highlight-item p {
+            color: #667587;
+            font-size: 13px;
+        }
+
+        /* SECTION GENERAL STYLES */
+
+        section {
+            padding: 75px 0;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-heading h2 {
+            color: #071b35;
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .section-heading p {
+            color: #718096;
+            font-size: 15px;
+        }
+
+        .section-heading::after {
+            content: "";
+            display: block;
+            width: 55px;
+            height: 4px;
+            background: #e6a23c;
+            margin: 15px auto 0;
+        }
+
+        /* ABOUT SECTION */
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 45px;
+            align-items: start;
+        }
+
+        .about-text p {
+            margin-bottom: 18px;
+            color: #536274;
+        }
+
+        .about-card {
+            background: #071b35;
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .about-card h3 {
+            color: #e6a23c;
+            margin-bottom: 20px;
+        }
+
+        .about-card ul {
+            list-style: none;
+        }
+
+        .about-card li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .about-card li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #e6a23c;
+        }
+
+        /* COMPETENCIES SECTION */
+
+        .competencies {
+            background: #edf2f7;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .skill-card {
+            background: white;
+            padding: 27px;
+            border-radius: 9px;
+            border-bottom: 4px solid #e6a23c;
+            transition: 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+        }
+
+        .skill-card h3 {
+            color: #0d3960;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .skill-card ul {
+            padding-left: 20px;
+            color: #627184;
+            font-size: 14px;
+        }
+
+        .skill-card li {
+            margin-bottom: 8px;
+        }
+
+        /* EXPERIENCE SECTION */
+
+        .experience-list {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .experience-card {
+            background: white;
+            padding: 28px;
+            margin-bottom: 22px;
+            border-left: 5px solid #e6a23c;
+            border-radius: 7px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.04);
+        }
+
+        .experience-card h3 {
+            color: #0d3960;
+            font-size: 19px;
+        }
+
+        .experience-card .role {
+            color: #d28b27;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+
+        .experience-card .date {
+            color: #7b8794;
+            font-size: 13px;
+            margin-bottom: 12px;
+        }
+
+        .experience-card p {
+            color: #5b6878;
+            font-size: 14px;
+        }
+
+        /* EQUIPMENT SECTION */
+
+        .equipment {
+            background: #edf2f7;
+        }
+
+        .equipment-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .equipment-card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+        }
+
+        .equipment-card h3 {
+            color: #0d3960;
+            margin-bottom: 10px;
+        }
+
+        .equipment-card p {
+            color: #627184;
+            font-size: 14px;
+        }
+
+        /* CAREER PROFILE SECTION */
+
+        .career-box {
+            background: #071b35;
+            color: white;
+            padding: 55px 30px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .career-box h2 {
+            color: #e6a23c;
+            font-size: 29px;
+            margin-bottom: 15px;
+        }
+
+        .career-box p {
+            color: #d8e3f0;
+            max-width: 700px;
+            margin: 0 auto 25px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            background: #061426;
+            color: white;
+            padding: 35px 0;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 13px;
+            color: #b8c5d5;
+        }
+
+        .footer-links {
+            margin: 15px 0;
+        }
+
+        .footer-links a {
+            color: #e6a23c;
+            margin: 0 10px;
+            font-size: 13px;
+        }
+
+        /* RESPONSIVE DESIGN */
+
+        @media (max-width: 900px) {
+            .nav-links {
+                gap: 12px;
+            }
+
+            .nav-links a {
+                font-size: 11px;
+            }
+
+            .hero-content {
+                gap: 25px;
+            }
+
+            .skills-grid,
+            .equipment-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 700px) {
+            .navbar {
+                min-height: 68px;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 68px;
+                left: 0;
+                width: 100%;
+                background: #071b35;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 20px 5%;
+                gap: 18px;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .nav-links a {
+                font-size: 14px;
+            }
+
+            .hero {
+                padding: 65px 0;
+            }
+
+            .hero-content,
+            .about-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .profile-placeholder {
+                width: 220px;
+                height: 250px;
+                margin-top: 15px;
+            }
+
+            .highlight-grid {
+                grid-template-columns: repeat(2, 1fr);
+                row-gap: 25px;
+            }
+
+            .skills-grid,
+            .equipment-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-heading h2 {
+                font-size: 27px;
+            }
+
+            section {
+                padding: 55px 0;
+            }
+
+            .about-card {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <div class="container navbar">
+
+            <a href="index.html" class="logo">
+                STANDFast<span>.</span>
+            </a>
+
+            <button class="menu-toggle"
+                    id="menuToggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pages/about.html">About</a></li>
+                <li><a href="pages/experience.html">Experience</a></li>
+                <li><a href="pages/competencies.html">Competencies</a></li>
+                <li><a href="pages/equipment.html">Equipment</a></li>
+                <li><a href="pages/projects.html">Projects</a></li>
+                <li><a href="pages/certifications.html">Certifications</a></li>
+                <li><a href="pages/education.html">Education</a></li>
+                <li><a href="pages/articles.html">Articles</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="hero" id="home">
+
+        <div class="container hero-content">
+
+            <div>
+
+                <div class="hero-label">
+                    Professional Portfolio
+                </div>
+
+                <h1>Standfast Tonye Bluejack</h1>
+
+                <h2>Field Operator | Oil & Gas Production Operations</h2>
+
+                <p>
+                    An experienced Oil and Gas Field Operator with over
+                    7 years of industry experience across production
+                    operations and plant environments. Skilled in
+                    production monitoring, S&W testing, process
+                    operations, equipment isolation, troubleshooting
+                    and operational safety.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="pages/experience.html"
+                       class="btn btn-primary">
+                        Explore My Experience
+                    </a>
+
+                    <a href="documents/Professional-CV.pdf"
+                       class="btn btn-outline"
+                       target="_blank"
+                       rel="noopener">
+                        Download My CV
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Replace this placeholder with your photograph -->
+
+            <div class="profile-placeholder">
+
+                <img src="assets/images/profile-photo.jpg"
+                     alt="Professional photograph of Standfast Tonye Bluejack"
+                     onerror="this.style.display='none'; this.parentElement.textContent='Your professional photograph will appear here';">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROFESSIONAL HIGHLIGHTS -->
+
+    <div class="highlights">
+
+        <div class="container highlight-grid">
+
+            <div class="highlight-item">
+                <h3>7+</h3>
+                <p>Years of Industry Experience</p>
+            </div>
+
+            <div class="highlight-item">
+                <h3>3</h3>
+                <p>Field Operator Roles</p>
+            </div>
+
+            <div class="highlight-item">
+                <h3>4</h3>
+                <p>Core Operational Areas</p>
+            </div>
+
+            <div class="highlight-item">
+                <h3>1</h3>
+                <p>NLNG Train 5 Project</p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ABOUT SECTION -->
+
+    <section id="about">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>About Me</h2>
+                <p>My professional background and career focus</p>
+            </div>
+
+            <div class="about-content">
+
+                <div class="about-text">
+
+                    <p>
+                        I am an Oil and Gas Field Operator with over
+                        seven years of industry experience, specialising
+                        in production operations, process monitoring,
+                        equipment reliability and operational
+                        troubleshooting.
+                    </p>
+
+                    <p>
+                        Throughout my career, I have gained practical
+                        experience monitoring production processes,
+                        conducting S&W tests, regulating process
+                        variables, carrying out authorised equipment
+                        isolation and de-isolation, and supporting
+                        process plant start-up activities.
+                    </p>
+
+                    <p>
+                        I have worked in operational environments
+                        associated with Seplat Energy and ExxonMobil,
+                        collaborating with field operators, control
+                        room personnel and maintenance teams.
+                    </p>
+
+                    <p>
+                        My professional background also includes
+                        electrical project experience at NLNG Plant,
+                        Train 5, which strengthened my understanding
+                        of industrial electrical installations and
+                        plant safety requirements.
+                    </p>
+
+                </div>
+
+
+                <div class="about-card">
+
+                    <h3>Professional Focus</h3>
+
+                    <ul>
+                        <li>Safe production operations</li>
+                        <li>Process monitoring and optimisation</li>
+                        <li>Equipment reliability</li>
+                        <li>Operational troubleshooting</li>
+                        <li>HSE compliance</li>
+                        <li>Technical reporting</li>
+                        <li>Continuous professional development</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TECHNICAL COMPETENCIES -->
+
+    <section class="competencies" id="competencies">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>Technical Competencies</h2>
+                <p>Key operational and technical capabilities</p>
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <h3>Production Operations</h3>
+                    <ul>
+                        <li>Production monitoring</li>
+                        <li>Production optimisation</li>
+                        <li>S&W testing</li>
+                        <li>Operational quality checks</li>
+                        <li>Production parameter monitoring</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Equipment Operations</h3>
+                    <ul>
+                        <li>Siemens Compression Packages</li>
+                        <li>Solar Generator Systems</li>
+                        <li>Equipment isolation</li>
+                        <li>Equipment de-isolation</li>
+                        <li>Equipment condition monitoring</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Process Operations</h3>
+                    <ul>
+                        <li>Process Plant Black Start support</li>
+                        <li>Process variable regulation</li>
+                        <li>Open Drain Systems</li>
+                        <li>Closed Drain Systems</li>
+                        <li>Preventive maintenance routines</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Safety and HSE</h3>
+                    <ul>
+                        <li>Permit to Work awareness</li>
+                        <li>Authorised Gas Testing</li>
+                        <li>Radiation Safety awareness</li>
+                        <li>Emergency response</li>
+                        <li>Safe work practices</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Troubleshooting</h3>
+                    <ul>
+                        <li>Operational issue identification</li>
+                        <li>Abnormal condition reporting</li>
+                        <li>Equipment malfunction response</li>
+                        <li>Corrective action coordination</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Professional Skills</h3>
+                    <ul>
+                        <li>Technical documentation</li>
+                        <li>Shift reporting and handover</li>
+                        <li>Team collaboration</li>
+                        <li>Problem-solving</li>
+                        <li>Operational communication</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROFESSIONAL EXPERIENCE -->
+
+    <section id="experience">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>Professional Experience</h2>
+                <p>My career journey in the oil and gas industry</p>
+            </div>
+
+            <div class="experience-list">
+
+
+                <div class="experience-card">
+
+                    <h3>Seplat Energy / Nautilus Nigeria Engineering & Construction</h3>
+
+                    <div class="role">Field Operator</div>
+
+                    <div class="date">
+                        12 December 2024 – Present
+                    </div>
+
+                    <p>
+                        Monitor production operations, conduct S&W
+                        testing, regulate process parameters, perform
+                        authorised isolation and de-isolation of Solar
+                        Generators and Siemens Compression Packages,
+                        support Process Plant Black Start activities,
+                        perform PMR on Open and Closed Drain Systems,
+                        troubleshoot operational issues and maintain
+                        accurate operating records.
+                    </p>
+
+                </div>
+
+
+                <div class="experience-card">
+
+                    <h3>ExxonMobil / Nautilus Nigeria Engineering & Construction</h3>
+
+                    <div class="role">Field Operator</div>
+
+                    <div class="date">
+                        10 October 2022 – 12 December 2024
+                    </div>
+
+                    <p>
+                        Monitored production processes and equipment
+                        conditions, conducted S&W tests, supported
+                        equipment isolation activities, participated
+                        in Process Plant Black Start activities,
+                        regulated process variables and carried out
+                        PMR on Open and Closed Drain Systems.
+                    </p>
+
+                </div>
+
+
+                <div class="experience-card">
+
+                    <h3>ExxonMobil / Homeland Integrated Offshore Services Limited</h3>
+
+                    <div class="role">Field Operator</div>
+
+                    <div class="date">
+                        29 July 2019 – 10 April 2020
+                    </div>
+
+                    <p>
+                        Monitored production processes, performed
+                        quality checks, supported equipment isolation
+                        and de-isolation, participated in process
+                        plant black start activities, performed
+                        preventive maintenance routines and
+                        responded to equipment malfunctions and
+                        process upsets.
+                    </p>
+
+                </div>
+
+
+                <div class="experience-card">
+
+                    <h3>ARCO M&E – NLNG Plant, Train 5</h3>
+
+                    <div class="role">
+                        Electrical Technician – Project Experience
+                    </div>
+
+                    <div class="date">
+                        15 May 2020 – 30 September 2022
+                    </div>
+
+                    <p>
+                        Supported electrical installation and
+                        termination activities, including braided
+                        earth cables on armoured cable systems,
+                        installation of earth bars and earth rings,
+                        electrical panels, wiring and associated
+                        components. Applied site HSE requirements.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div style="text-align:center; margin-top:25px;">
+
+                <a href="pages/experience.html"
+                   class="btn btn-primary">
+                    View Full Experience
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EQUIPMENT AND PROCESS KNOWLEDGE -->
+
+    <section class="equipment" id="equipment">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <h2>Equipment & Process Knowledge</h2>
+                <p>Equipment and operating systems covered by my work experience</p>
+            </div>
+
+            <div class="equipment-grid">
+
+                <div class="equipment-card">
+                    <h3>Siemens Compression Packages</h3>
+                    <p>
+                        Experience supporting authorised isolation
+                        and de-isolation, operational monitoring
+                        and troubleshooting activities.
+                    </p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Solar Generator Systems</h3>
+                    <p>
+                        Experience supporting authorised equipment
+                        isolation and de-isolation activities.
+                    </p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Open and Closed Drain Systems</h3>
+                    <p>
+                        Experience carrying out assigned PMR
+                        activities on these process systems.
+                    </p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Production Monitoring</h3>
+                    <p>
+                        Monitoring production conditions,
+                        conducting S&W tests and performing
+                        operational quality checks.
+                    </p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Process Plant Black Start</h3>
+                    <p>
+                        Participation in process plant black
+                        start activities with operations teams.
+                    </p>
+                </div>
+
+                <div class="equipment-card">
+                    <h3>Industrial Electrical Systems</h3>
+                    <p>
+                        NLNG Train 5 project exposure involving
+                        earth cables, earth bars, earth rings,
+                        electrical panels and wiring.
+                    </p>
+                </div>
+
+            </div>
+
+            <div style="text-align:center; margin-top:30px;">
+
+                <a href="pages/equipment.html"
+                   class="btn btn-primary">
+                    Explore Equipment & Processes
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CAREER OBJECTIVE -->
+
+    <section>
+
+        <div class="container">
+
+            <div class="career-box">
+
+                <h2>Professional Career Objective</h2>
+
+                <p>
+                    I am committed to contributing to safe,
+                    reliable and efficient oil and gas production
+                    operations. I look forward to applying my
+                    operational experience, technical knowledge
+                    and safety-focused approach to support
+                    organisational objectives and continued
+                    professional development.
+                </p>
+
+                <a href="pages/contact.html"
+                   class="btn btn-primary">
+                    Contact Me
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="container">
+
+            <h3>Standfast Tonye Bluejack</h3>
+
+            <p>
+                Field Operator | Oil & Gas Production Operations
+            </p>
+
+            <div class="footer-links">
+
+                <a href="mailto:bluejackstandfast@gmail.com">
+                    Email
+                </a>
+
+                <a href="tel:+2348067389156">
+                    Phone
+                </a>
+
+                <a href="pages/contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+            <p>
+                &copy; <span id="currentYear"></span>
+                Standfast Tonye Bluejack.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        const menuToggle = document.getElementById("menuToggle");
+        const navLinks = document.getElementById("navLinks");
+
+        menuToggle.addEventListener("click", function () {
+
+            navLinks.classList.toggle("active");
+
+            const isOpen = navLinks.classList.contains("active");
+
+            menuToggle.setAttribute("aria-expanded", isOpen);
+
+            menuToggle.textContent = isOpen ? "×" : "☰";
+
+        });
+
+        // Close mobile menu after clicking a navigation link
+
+        document.querySelectorAll(".nav-links a").forEach(link => {
+
+            link.addEventListener("click", function () {
+
+                navLinks.classList.remove("active");
+
+                menuToggle.setAttribute("aria-expanded", "false");
+
+                menuToggle.textContent = "☰";
+
+            });
+
+        });
+
+        // Automatically update the copyright year
+
+        document.getElementById("currentYear").textContent =
+            new Date().getFullYear();
+
+    </script>
+
+</body>
+</html>

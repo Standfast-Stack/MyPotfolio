@@ -1,0 +1,207 @@
+
+/* =========================================
+   CERTIFICATIONS & TRAINING PAGE
+========================================= */
+
+.certification-category-title {
+    color: #10243a;
+    font-size: 24px;
+    margin: 55px 0 25px;
+}
+
+.certification-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.certification-card {
+    background: #ffffff;
+    padding: 28px;
+    border: 1px solid #e2e6ec;
+    border-radius: 12px;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.certification-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.07);
+}
+
+.certification-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff4df;
+    border-radius: 12px;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.certification-type {
+    display: inline-block;
+    color: #b47c14;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.certification-card h3 {
+    color: #10243a;
+    font-size: 19px;
+    margin-bottom: 12px;
+}
+
+.certification-provider {
+    color: #344054;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.certification-card p:last-child {
+    color: #667085;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.certification-disclaimer {
+    color: #667085;
+    font-size: 14px;
+    line-height: 1.8;
+    max-width: 850px;
+    margin-bottom: 25px;
+}
+
+.authorisation-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.authorisation-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background: #ffffff;
+    padding: 22px;
+    border: 1px solid #e2e6ec;
+    border-radius: 10px;
+}
+
+.authorisation-icon {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff4df;
+    border-radius: 10px;
+    font-size: 21px;
+}
+
+.authorisation-item h3 {
+    color: #10243a;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.authorisation-item p {
+    color: #667085;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.development-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 40px;
+}
+
+.development-card {
+    background: #ffffff;
+    padding: 27px;
+    border: 1px solid #e2e6ec;
+    border-radius: 10px;
+}
+
+.development-card h3 {
+    color: #10243a;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.development-card p {
+    color: #667085;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.certificate-upload-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 35px;
+    background: #10243a;
+    color: #ffffff;
+    border-radius: 12px;
+}
+
+.certificate-note-icon {
+    font-size: 40px;
+}
+
+.certificate-upload-note h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.certificate-upload-note p {
+    color: #d0d7e0;
+    line-height: 1.8;
+    margin-bottom: 22px;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+
+    .certification-grid,
+    .authorisation-list,
+    .development-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .certification-grid,
+    .authorisation-list,
+    .development-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .certification-card,
+    .development-card {
+        padding: 22px;
+    }
+
+    .certificate-upload-note {
+        flex-direction: column;
+        padding: 25px;
+    }
+
+    .certification-category-title {
+        font-size: 21px;
+    }
+
+}

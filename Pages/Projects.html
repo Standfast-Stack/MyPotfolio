@@ -1,0 +1,955 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Explore the operational experience and project contributions of Standfast Tonye Bluejack, an Oil and Gas Field Operator.">
+
+    <title>Projects & Operational Experience | Standfast Tonye Bluejack</title>
+
+    <style>
+        :root {
+            --navy: #0b1f35;
+            --navy-light: #173653;
+            --amber: #f2a900;
+            --white: #ffffff;
+            --light: #f3f6f9;
+            --grey: #64748b;
+            --dark: #263445;
+            --border: #e1e7ee;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+            color: var(--dark);
+            background: var(--white);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1150px;
+            margin: auto;
+        }
+
+        /* Navigation */
+        header {
+            background: var(--navy);
+            color: var(--white);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            min-height: 75px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .logo {
+            font-size: 21px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            white-space: nowrap;
+        }
+
+        .logo span {
+            color: var(--amber);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 19px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 13px;
+            color: #e2e8f0;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--amber);
+        }
+
+        .menu-toggle {
+            display: none;
+            border: none;
+            background: none;
+            color: var(--white);
+            font-size: 27px;
+            cursor: pointer;
+        }
+
+        /* Hero */
+        .page-hero {
+            background:
+                linear-gradient(rgba(11, 31, 53, 0.93), rgba(11, 31, 53, 0.93)),
+                linear-gradient(135deg, #173653, #0b1f35);
+            color: var(--white);
+            padding: 85px 0;
+            text-align: center;
+        }
+
+        .eyebrow {
+            color: #b77d00;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .page-hero .eyebrow {
+            color: var(--amber);
+        }
+
+        .page-hero h1 {
+            font-size: 42px;
+            margin: 12px 0;
+        }
+
+        .page-hero p {
+            max-width: 760px;
+            margin: auto;
+            color: #d5dfeb;
+            font-size: 16px;
+        }
+
+        section {
+            padding: 75px 0;
+        }
+
+        .section-heading {
+            margin-bottom: 35px;
+        }
+
+        .section-heading h2 {
+            color: var(--navy);
+            font-size: 29px;
+            margin-top: 5px;
+        }
+
+        .section-heading p {
+            color: var(--grey);
+            margin-top: 8px;
+            max-width: 760px;
+        }
+
+        /* Introduction */
+        .intro-text {
+            max-width: 900px;
+        }
+
+        .intro-text p {
+            color: #526173;
+            margin-bottom: 16px;
+        }
+
+        /* Project cards */
+        .projects-section {
+            background: var(--light);
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .project-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(11, 31, 53, 0.08);
+        }
+
+        .project-top {
+            background: var(--navy);
+            padding: 25px 28px;
+            color: var(--white);
+            border-bottom: 4px solid var(--amber);
+        }
+
+        .project-top .project-type {
+            color: var(--amber);
+            font-size: 11px;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+        }
+
+        .project-top h3 {
+            font-size: 20px;
+            line-height: 1.4;
+            margin-top: 7px;
+        }
+
+        .project-content {
+            padding: 25px 28px;
+        }
+
+        .project-content p {
+            color: var(--grey);
+            font-size: 14px;
+            margin-bottom: 17px;
+        }
+
+        .project-content h4 {
+            color: var(--navy);
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .project-content ul {
+            padding-left: 19px;
+            color: #526173;
+            font-size: 14px;
+        }
+
+        .project-content li {
+            margin-bottom: 7px;
+        }
+
+        .project-meta {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid var(--border);
+            font-size: 12px;
+            color: var(--grey);
+        }
+
+        .project-meta strong {
+            color: var(--navy);
+        }
+
+        /* Experience areas */
+        .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .experience-item {
+            padding: 25px;
+            background: #f8fafc;
+            border-left: 4px solid var(--amber);
+        }
+
+        .experience-item h3 {
+            color: var(--navy);
+            font-size: 17px;
+            margin-bottom: 9px;
+        }
+
+        .experience-item p {
+            color: var(--grey);
+            font-size: 14px;
+        }
+
+        /* Professional contribution */
+        .contribution {
+            background: var(--navy);
+            color: var(--white);
+        }
+
+        .contribution h2 {
+            font-size: 29px;
+            margin-bottom: 15px;
+        }
+
+        .contribution-intro {
+            color: #d5dfeb;
+            max-width: 800px;
+            margin-bottom: 30px;
+        }
+
+        .contribution-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .contribution-item {
+            padding: 22px;
+            border: 1px solid #35516c;
+            border-radius: 8px;
+        }
+
+        .contribution-item h3 {
+            color: var(--amber);
+            font-size: 17px;
+            margin-bottom: 8px;
+        }
+
+        .contribution-item p {
+            color: #d5dfeb;
+            font-size: 14px;
+        }
+
+        /* HSE note */
+        .hse-note {
+            background: #fff8e6;
+            border-left: 4px solid var(--amber);
+            padding: 22px 25px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+
+        .hse-note h3 {
+            color: var(--navy);
+            margin-bottom: 7px;
+            font-size: 17px;
+        }
+
+        .hse-note p {
+            color: #526173;
+            font-size: 14px;
+        }
+
+        /* Call to action */
+        .cta {
+            text-align: center;
+        }
+
+        .cta h2 {
+            color: var(--navy);
+            font-size: 29px;
+            margin-bottom: 12px;
+        }
+
+        .cta p {
+            color: var(--grey);
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 20px 7px 0;
+            padding: 12px 25px;
+            background: var(--amber);
+            color: var(--navy);
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #ffc233;
+            transform: translateY(-2px);
+        }
+
+        .button.secondary {
+            background: var(--navy);
+            color: var(--white);
+        }
+
+        .button.secondary:hover {
+            background: var(--navy-light);
+        }
+
+        /* Footer */
+        footer {
+            background: #071626;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 25px 0;
+            font-size: 13px;
+        }
+
+        footer span {
+            color: var(--amber);
+        }
+
+        /* Responsive design */
+        @media (max-width: 900px) {
+            .nav-links {
+                gap: 11px;
+            }
+
+            .nav-links a {
+                font-size: 11px;
+            }
+
+            .experience-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 760px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 75px;
+                left: 0;
+                width: 100%;
+                background: var(--navy);
+                padding: 20px 5%;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+
+            .nav-links a {
+                font-size: 14px;
+            }
+
+            .page-hero {
+                padding: 65px 0;
+            }
+
+            .page-hero h1 {
+                font-size: 32px;
+            }
+
+            .project-grid,
+            .experience-grid,
+            .contribution-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 55px 0;
+            }
+
+            .section-heading h2,
+            .contribution h2,
+            .cta h2 {
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="container navbar">
+
+            <a href="../index.html" class="logo">
+                STANDFAST<span>.</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="competencies.html">Competencies</a></li>
+                <li><a href="equipment.html">Equipment</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="certifications.html">Training</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="eyebrow">My Work & Contributions</div>
+
+            <h1>Projects & Operational Experience</h1>
+
+            <p>
+                An overview of my practical involvement in oil and gas
+                production operations, plant activities, equipment
+                maintenance support and electrical project work.
+            </p>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section>
+        <div class="container">
+
+            <div class="section-heading">
+                <div class="eyebrow">Professional Experience</div>
+                <h2>Practical Experience in Operations</h2>
+            </div>
+
+            <div class="intro-text">
+                <p>
+                    My experience in the oil and gas industry has provided
+                    opportunities to participate in a range of field and
+                    plant activities. These include production monitoring,
+                    process control support, equipment isolation, preventive
+                    maintenance routines, troubleshooting and emergency
+                    response activities.
+                </p>
+
+                <p>
+                    I have also supported electrical project activities at
+                    the NLNG Plant, Train 5, gaining exposure to electrical
+                    installation work, earthing systems, cable work and
+                    inspection activities.
+                </p>
+
+                <p>
+                    The following sections highlight selected areas of
+                    practical involvement based on my professional work
+                    history.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Project and Operational Experience Cards -->
+    <section class="projects-section">
+        <div class="container">
+
+            <div class="section-heading">
+                <div class="eyebrow">Selected Work</div>
+                <h2>Projects & Key Operational Activities</h2>
+                <p>
+                    Selected operational responsibilities and project
+                    contributions from my oil and gas career.
+                </p>
+            </div>
+
+            <div class="project-grid">
+
+                <!-- Project 1 -->
+                <article class="project-card">
+
+                    <div class="project-top">
+                        <div class="project-type">Production Operations</div>
+                        <h3>Production Monitoring & Process Control Support</h3>
+                    </div>
+
+                    <div class="project-content">
+
+                        <p>
+                            Involvement in routine field production activities
+                            to support safe and stable facility operations.
+                        </p>
+
+                        <h4>Key Activities</h4>
+
+                        <ul>
+                            <li>Monitoring production conditions and process variables.</li>
+                            <li>Conducting field inspections and operational quality checks.</li>
+                            <li>Performing S&W tests and communicating results or deviations.</li>
+                            <li>Monitoring and adjusting process parameters within approved operating instructions.</li>
+                            <li>Identifying and reporting abnormal operating conditions.</li>
+                            <li>Maintaining operating readings and shift records.</li>
+                        </ul>
+
+                        <div class="project-meta">
+                            <strong>Experience:</strong> Field Operator roles
+                            at Seplat Energy and ExxonMobil-associated operations.
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+
+                    <div class="project-top">
+                        <div class="project-type">Plant Operations</div>
+                        <h3>Process Plant Black Start Support</h3>
+                    </div>
+
+                    <div class="project-content">
+
+                        <p>
+                            Participation in Process Plant Black Start
+                            activities as part of operational support
+                            responsibilities.
+                        </p>
+
+                        <h4>Key Activities</h4>
+
+                        <ul>
+                            <li>Supporting Black Start activities in accordance with site procedures.</li>
+                            <li>Working with field and control room personnel during operational activities.</li>
+                            <li>Monitoring relevant equipment and process conditions.</li>
+                            <li>Communicating equipment status and abnormal observations.</li>
+                            <li>Following operational instructions and applicable safety requirements.</li>
+                        </ul>
+
+                        <div class="project-meta">
+                            <strong>Experience:</strong> Field Operator roles
+                            at Seplat Energy and ExxonMobil-associated operations.
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+
+                    <div class="project-top">
+                        <div class="project-type">Preventive Maintenance</div>
+                        <h3>Open & Closed Drain System PMR Activities</h3>
+                    </div>
+
+                    <div class="project-content">
+
+                        <p>
+                            Participation in preventive maintenance routines
+                            on Open and Closed Drain Systems as part of
+                            facility operational support.
+                        </p>
+
+                        <h4>Key Activities</h4>
+
+                        <ul>
+                            <li>Carrying out assigned PMR activities on Open and Closed Drain Systems.</li>
+                            <li>Observing equipment and system conditions.</li>
+                            <li>Reporting defects and abnormal conditions.</li>
+                            <li>Coordinating with relevant operations and maintenance personnel.</li>
+                            <li>Following applicable site procedures and safety controls.</li>
+                        </ul>
+
+                        <div class="project-meta">
+                            <strong>Experience:</strong> Field Operator roles
+                            at Seplat Energy and ExxonMobil-associated operations.
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card">
+
+                    <div class="project-top">
+                        <div class="project-type">Equipment Operations</div>
+                        <h3>Solar Generator & Siemens Compression Package Isolation</h3>
+                    </div>
+
+                    <div class="project-content">
+
+                        <p>
+                            Experience supporting equipment isolation and
+                            de-isolation activities in line with site
+                            authorisation, permit requirements and procedures.
+                        </p>
+
+                        <h4>Key Activities</h4>
+
+                        <ul>
+                            <li>Supporting authorised isolation and de-isolation activities.</li>
+                            <li>Working with Solar Generator systems.</li>
+                            <li>Working with Siemens Compression Packages.</li>
+                            <li>Communicating equipment status with relevant personnel.</li>
+                            <li>Following site isolation procedures and applicable permit controls.</li>
+                        </ul>
+
+                        <div class="project-meta">
+                            <strong>Experience:</strong> Field Operator roles
+                            at Seplat Energy and ExxonMobil-associated operations.
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="project-card">
+
+                    <div class="project-top">
+                        <div class="project-type">Electrical Project Experience</div>
+                        <h3>NLNG Plant – Train 5 Electrical Works</h3>
+                    </div>
+
+                    <div class="project-content">
+
+                        <p>
+                            Electrical Technician project experience at
+                            the NLNG Plant, Train 5, supporting electrical
+                            installation and associated site activities.
+                        </p>
+
+                        <h4>Key Activities</h4>
+
+                        <ul>
+                            <li>Supporting braided earth cable installation on armoured cable systems.</li>
+                            <li>Working with earth bars and earth rings.</li>
+                            <li>Assisting with electrical panels, wiring and associated components.</li>
+                            <li>Inspecting installations and identifying defects.</li>
+                            <li>Supporting troubleshooting and resolution of installation issues.</li>
+                            <li>Applying site HSE requirements and using appropriate PPE.</li>
+                        </ul>
+
+                        <div class="project-meta">
+                            <strong>Project Period:</strong> May 2020 – September 2022
+                            <br>
+                            <strong>Project:</strong> ARCO M&E – NLNG Plant, Train 5
+                        </div>
+
+                    </div>
+                </article>
+
+                <!-- Project 6 -->
+                <article class="project-card">
+
+                    <div class="project-top">
+                        <div class="project-type">Operational Support</div>
+                        <h3>Troubleshooting & Abnormal Situation Response</h3>
+                    </div>
+
+                    <div class="project-content">
+
+                        <p>
+                            Field operational support involving equipment
+                            monitoring, troubleshooting and response to
+                            process upsets and equipment malfunctions.
+                        </p>
+
+                        <h4>Key Activities</h4>
+
+                        <ul>
+                            <li>Monitoring equipment conditions and identifying abnormal indications.</li>
+                            <li>Reporting process deviations and equipment malfunctions.</li>
+                            <li>Coordinating with Control Room Operators and maintenance teams.</li>
+                            <li>Supporting corrective actions as directed.</li>
+                            <li>Responding to operational upsets in accordance with emergency procedures.</li>
+                            <li>Maintaining accurate records and shift handover information.</li>
+                        </ul>
+
+                        <div class="project-meta">
+                            <strong>Experience:</strong> Field Operator roles
+                            at Seplat Energy and ExxonMobil-associated operations.
+                        </div>
+
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Areas of Operational Exposure -->
+    <section>
+        <div class="container">
+
+            <div class="section-heading">
+                <div class="eyebrow">Technical Exposure</div>
+                <h2>Areas of Operational Involvement</h2>
+                <p>
+                    Practical areas in which I have developed experience
+                    through field operations and project assignments.
+                </p>
+            </div>
+
+            <div class="experience-grid">
+
+                <div class="experience-item">
+                    <h3>Production Operations</h3>
+                    <p>
+                        Production monitoring, S&W testing, quality checks
+                        and process parameter monitoring.
+                    </p>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Process Systems</h3>
+                    <p>
+                        Process Plant Black Start support and monitoring
+                        of operating conditions.
+                    </p>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Equipment Isolation</h3>
+                    <p>
+                        Authorised isolation and de-isolation activities
+                        involving selected facility equipment.
+                    </p>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Preventive Maintenance</h3>
+                    <p>
+                        PMR activities on Open and Closed Drain Systems
+                        and reporting of equipment conditions.
+                    </p>
+                </div>
+
+                <div class="experience-item">
+                    <h3>Electrical Installation</h3>
+                    <p>
+                        Electrical project exposure involving earthing
+                        systems, cables, panels and wiring.
+                    </p>
+                </div>
+
+                <div class="experience-item">
+                    <h3>HSE & Emergency Response</h3>
+                    <p>
+                        Safe work practices, abnormal situation reporting
+                        and response in accordance with site procedures.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Professional Contribution -->
+    <section class="contribution">
+        <div class="container">
+
+            <h2>My Contribution to Operations</h2>
+
+            <p class="contribution-intro">
+                I understand that reliable oil and gas operations depend
+                on safety, effective communication, equipment awareness
+                and consistent execution of approved operating procedures.
+                My contribution is focused on supporting these priorities
+                through disciplined field operations.
+            </p>
+
+            <div class="contribution-grid">
+
+                <div class="contribution-item">
+                    <h3>Safe Work Execution</h3>
+                    <p>
+                        Applying site safety requirements and operating
+                        procedures during assigned field activities.
+                    </p>
+                </div>
+
+                <div class="contribution-item">
+                    <h3>Clear Communication</h3>
+                    <p>
+                        Reporting process deviations, equipment conditions
+                        and operating observations to relevant personnel.
+                    </p>
+                </div>
+
+                <div class="contribution-item">
+                    <h3>Operational Coordination</h3>
+                    <p>
+                        Working with Control Room Operators, maintenance
+                        teams and other operations personnel.
+                    </p>
+                </div>
+
+                <div class="contribution-item">
+                    <h3>Accurate Documentation</h3>
+                    <p>
+                        Maintaining equipment readings, operating records,
+                        reports and shift handover information.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="hse-note">
+                <h3>Confidentiality & Safety</h3>
+                <p>
+                    This portfolio provides a general description of my
+                    professional experience. It does not disclose
+                    confidential plant information, proprietary operating
+                    procedures, sensitive process parameters or restricted
+                    facility documentation.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+
+            <h2>Interested in My Professional Background?</h2>
+
+            <p>
+                Explore my detailed work history, technical competencies
+                and equipment knowledge, or contact me regarding relevant
+                Field Operator and Process Operator opportunities.
+            </p>
+
+            <a href="experience.html" class="button">
+                View Work Experience
+            </a>
+
+            <a href="contact.html" class="button secondary">
+                Contact Me
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>
+                &copy; <span id="year"></span>
+                Standfast Tonye Bluejack. All Rights Reserved.
+            </p>
+
+            <p>Field Operator | Oil and Gas Production Operations</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile navigation
+        const menuToggle = document.getElementById("menuToggle");
+        const navLinks = document.getElementById("navLinks");
+
+        menuToggle.addEventListener("click", function () {
+            const isOpen = navLinks.classList.toggle("show");
+
+            menuToggle.setAttribute("aria-expanded", isOpen);
+            menuToggle.textContent = isOpen ? "✕" : "☰";
+        });
+
+        // Automatic copyright year
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
+</html>
