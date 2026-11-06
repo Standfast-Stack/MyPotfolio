@@ -1,0 +1,709 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Contact Standfast Tonye Bluejack, an experienced Oil and Gas Field Operator, for professional and international career opportunities.">
+
+    <title>Contact Me | Standfast Tonye Bluejack</title>
+
+    <style>
+        :root {
+            --navy: #0b1f35;
+            --navy-light: #173653;
+            --amber: #f2a900;
+            --white: #ffffff;
+            --light: #f3f6f9;
+            --grey: #64748b;
+            --dark: #263445;
+            --border: #e1e7ee;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+            color: var(--dark);
+            background: var(--white);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1150px;
+            margin: auto;
+        }
+
+        /* Navigation */
+        header {
+            background: var(--navy);
+            color: var(--white);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            min-height: 75px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .logo {
+            font-size: 21px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            white-space: nowrap;
+        }
+
+        .logo span {
+            color: var(--amber);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 19px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 13px;
+            color: #e2e8f0;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--amber);
+        }
+
+        .menu-toggle {
+            display: none;
+            border: none;
+            background: none;
+            color: var(--white);
+            font-size: 27px;
+            cursor: pointer;
+        }
+
+        /* Hero */
+        .page-hero {
+            background:
+                linear-gradient(rgba(11, 31, 53, 0.94), rgba(11, 31, 53, 0.94)),
+                linear-gradient(135deg, #173653, #0b1f35);
+            color: var(--white);
+            padding: 85px 0;
+            text-align: center;
+        }
+
+        .eyebrow {
+            color: #b77d00;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .page-hero .eyebrow {
+            color: var(--amber);
+        }
+
+        .page-hero h1 {
+            font-size: 42px;
+            margin: 12px 0;
+        }
+
+        .page-hero p {
+            max-width: 730px;
+            margin: auto;
+            color: #d5dfeb;
+            font-size: 16px;
+        }
+
+        section {
+            padding: 75px 0;
+        }
+
+        .section-heading {
+            margin-bottom: 30px;
+        }
+
+        .section-heading h2 {
+            color: var(--navy);
+            font-size: 29px;
+            margin-top: 5px;
+        }
+
+        .section-heading p {
+            color: var(--grey);
+            margin-top: 8px;
+        }
+
+        /* Contact layout */
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 0.9fr 1.1fr;
+            gap: 45px;
+            align-items: start;
+        }
+
+        .contact-intro {
+            color: var(--grey);
+            margin-bottom: 25px;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 17px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            padding: 18px;
+            background: var(--light);
+            border-radius: 8px;
+            border-left: 4px solid var(--amber);
+        }
+
+        .contact-icon {
+            width: 42px;
+            height: 42px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--navy);
+            color: var(--amber);
+            border-radius: 50%;
+            font-size: 18px;
+        }
+
+        .contact-item h3 {
+            color: var(--navy);
+            font-size: 15px;
+            margin-bottom: 3px;
+        }
+
+        .contact-item p,
+        .contact-item a {
+            color: var(--grey);
+            font-size: 14px;
+            overflow-wrap: anywhere;
+        }
+
+        .contact-item a:hover {
+            color: #b77d00;
+        }
+
+        /* Contact form */
+        .contact-form {
+            background: var(--light);
+            padding: 32px;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+        }
+
+        .contact-form h2 {
+            color: var(--navy);
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .contact-form > p {
+            color: var(--grey);
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+            color: var(--navy);
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 7px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid var(--border);
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: 14px;
+            outline: none;
+            background: var(--white);
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--amber);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 130px;
+        }
+
+        .submit-button {
+            width: 100%;
+            border: none;
+            padding: 14px;
+            background: var(--amber);
+            color: var(--navy);
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .submit-button:hover {
+            background: #ffc233;
+        }
+
+        .form-note {
+            font-size: 12px;
+            color: var(--grey);
+            margin-top: 12px;
+        }
+
+        /* Availability */
+        .availability {
+            background: var(--light);
+        }
+
+        .availability-content {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .availability-content h2 {
+            color: var(--navy);
+            font-size: 28px;
+            margin: 10px 0;
+        }
+
+        .availability-content p {
+            color: var(--grey);
+        }
+
+        .availability-tags {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 25px;
+        }
+
+        .availability-tags span {
+            background: var(--white);
+            color: var(--navy);
+            border: 1px solid var(--border);
+            padding: 9px 16px;
+            border-radius: 25px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        /* CV section */
+        .cv-section {
+            text-align: center;
+        }
+
+        .cv-section h2 {
+            color: var(--navy);
+            font-size: 29px;
+            margin-bottom: 10px;
+        }
+
+        .cv-section p {
+            max-width: 700px;
+            margin: auto;
+            color: var(--grey);
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 23px;
+            padding: 13px 25px;
+            background: var(--amber);
+            color: var(--navy);
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #ffc233;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            background: #071626;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 25px 0;
+            font-size: 13px;
+        }
+
+        footer span {
+            color: var(--amber);
+        }
+
+        /* Mobile */
+        @media (max-width: 900px) {
+            .nav-links {
+                gap: 11px;
+            }
+
+            .nav-links a {
+                font-size: 11px;
+            }
+        }
+
+        @media (max-width: 760px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 75px;
+                left: 0;
+                width: 100%;
+                background: var(--navy);
+                padding: 20px 5%;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+
+            .nav-links a {
+                font-size: 14px;
+            }
+
+            .page-hero {
+                padding: 65px 0;
+            }
+
+            .page-hero h1 {
+                font-size: 32px;
+            }
+
+            .contact-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-form {
+                padding: 23px;
+            }
+
+            section {
+                padding: 55px 0;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="../assets/styles/main.css">
+    </head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="container navbar">
+
+            <a href="../index.html" class="logo">
+                STANDFAST<span>.</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="competencies.html">Competencies</a></li>
+                <li><a href="equipment.html">Equipment</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="certifications.html">Training</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="page-hero">
+        <div class="container">
+
+            <div class="eyebrow">Let's Connect</div>
+
+            <h1>Contact Me</h1>
+
+            <p>
+                I welcome professional enquiries, recruitment opportunities
+                and connections with organisations in the oil and gas industry.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- Contact Details and Form -->
+    <section>
+        <div class="container contact-layout">
+
+            <!-- Contact Information -->
+            <div>
+
+                <div class="section-heading">
+                    <div class="eyebrow">Get in Touch</div>
+                    <h2>Professional Contact Information</h2>
+                </div>
+
+                <p class="contact-intro">
+                    Thank you for visiting my professional portfolio.
+                    If you are a recruiter, hiring manager or industry
+                    professional interested in my experience, please
+                    feel free to contact me.
+                </p>
+
+                <div class="contact-details">
+
+                    <div class="contact-item">
+                        <div class="contact-icon">✉</div>
+
+                        <div>
+                            <h3>Email Address</h3>
+                            <a href="mailto:bluejackstandfast@gmail.com">
+                                bluejackstandfast@gmail.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">☎</div>
+
+                        <div>
+                            <h3>Phone Number</h3>
+                            <a href="tel:+2348067389156">
+                                +234 806 738 9156
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">⌖</div>
+
+                        <div>
+                            <h3>Location</h3>
+                            <p>Port Harcourt, Rivers State, Nigeria</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">🌍</div>
+
+                        <div>
+                            <h3>Professional Industry</h3>
+                            <p>Oil and Gas – Production Operations</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Enquiry Form -->
+            <div class="contact-form">
+
+                <h2>Send a Professional Enquiry</h2>
+
+                <p>
+                    Complete the form below to prepare an enquiry
+                    using your email application.
+                </p>
+
+                <form id="contact-form">
+
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your full name"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email address"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="organisation">Organisation / Company</label>
+                        <input
+                            type="text"
+                            id="organisation"
+                            name="organisation"
+                            placeholder="Enter your organisation">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Enquiry Type *</label>
+
+                        <select id="enquiry-type" name="subject" required>
+                            <option value="">Select enquiry type</option>
+                            <option value="Field Operator Opportunity">
+                                Field Operator Opportunity
+                            </option>
+                            <option value="Process Operator Opportunity">
+                                Process Operator Opportunity
+                            </option>
+                            <option value="Oil and Gas Recruitment">
+                                Oil and Gas Recruitment
+                            </option>
+                            <option value="Professional Networking">
+                                Professional Networking
+                            </option>
+                            <option value="Other Professional Enquiry">
+                                Other Professional Enquiry
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message *</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            placeholder="Write your message here..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">
+                        Prepare Email
+                    </button>
+
+                    <p class="form-note">
+                        This form opens your default email application.
+                        It does not directly submit or store your information.
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Career Interests -->
+    <section class="availability">
+        <div class="container availability-content">
+
+            <div class="eyebrow">Career Interests</div>
+
+            <h2>Professional Opportunities</h2>
+
+            <p>
+                I am interested in suitable opportunities where my
+                operational experience and technical knowledge can
+                contribute to safe and reliable oil and gas operations.
+            </p>
+
+            <div class="availability-tags">
+                <span>Field Operator</span>
+                <span>Process Operator</span>
+                <span>Production Operator</span>
+                <span>Plant Operator</span>
+                <span>Oil & Gas Operations</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CV Download -->
+    <section class="cv-section">
+        <div class="container">
+
+            <div class="eyebrow">Professional Resume</div>
+
+            <h2>Would You Like to Review My CV?</h2>
+
+            <p>
+                My CV provides further details about my professional
+                experience, technical competencies, education and training.
+                You can download it using the link below.
+            </p>
+
+            <a href="../documents/Professional-CV.pdf"
+               class="button"
+               download>
+                Download My CV
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+
+            <p>
+                &copy; <span id="year"></span>
+                Standfast Tonye Bluejack. All Rights Reserved.
+            </p>
+
+            <p>Field Operator | Oil and Gas Production Operations</p>
+
+        </div>
+    </footer>
+    <script src="../assets/scripts/main.js" defer></script>
+</body>
+</html>

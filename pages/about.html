@@ -1,0 +1,666 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Standfast Tonye Bluejack, an Oil and Gas Field Operator with over 7 years of experience in production operations and plant environments.">
+    <title>About Me | Standfast Tonye Bluejack</title>
+
+    <style>
+        :root {
+            --navy: #0b1f35;
+            --navy-light: #173653;
+            --amber: #f2a900;
+            --white: #ffffff;
+            --light: #f3f6f9;
+            --grey: #64748b;
+            --dark: #263445;
+            --border: #e1e7ee;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.7;
+            color: var(--dark);
+            background: var(--white);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1150px;
+            margin: auto;
+        }
+
+        /* Navigation */
+        header {
+            background: var(--navy);
+            color: var(--white);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            min-height: 75px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .logo {
+            font-size: 21px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            white-space: nowrap;
+        }
+
+        .logo span {
+            color: var(--amber);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 19px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-size: 13px;
+            color: #e2e8f0;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--amber);
+        }
+
+        .menu-toggle {
+            display: none;
+            border: none;
+            background: none;
+            color: var(--white);
+            font-size: 27px;
+            cursor: pointer;
+        }
+
+        /* Page heading */
+        .page-hero {
+            background:
+                linear-gradient(rgba(11, 31, 53, 0.93), rgba(11, 31, 53, 0.93)),
+                linear-gradient(135deg, #173653, #0b1f35);
+            color: var(--white);
+            padding: 85px 0;
+            text-align: center;
+        }
+
+        .page-hero .eyebrow {
+            color: var(--amber);
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        .page-hero h1 {
+            font-size: 43px;
+            margin: 12px 0;
+        }
+
+        .page-hero p {
+            max-width: 720px;
+            margin: auto;
+            color: #d5dfeb;
+            font-size: 16px;
+        }
+
+        /* General sections */
+        section {
+            padding: 75px 0;
+        }
+
+        .section-heading {
+            margin-bottom: 30px;
+        }
+
+        .section-heading .eyebrow {
+            color: #b77d00;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .section-heading h2 {
+            color: var(--navy);
+            font-size: 29px;
+            margin-top: 5px;
+        }
+
+        .section-heading p {
+            color: var(--grey);
+            margin-top: 8px;
+        }
+
+        /* About introduction */
+        .about-intro {
+            display: grid;
+            grid-template-columns: 1.4fr 0.8fr;
+            gap: 55px;
+            align-items: start;
+        }
+
+        .about-text p {
+            margin-bottom: 17px;
+            color: #526173;
+        }
+
+        .about-text strong {
+            color: var(--navy);
+        }
+
+        .profile-card {
+            background: var(--light);
+            padding: 30px;
+            border-radius: 12px;
+            border-top: 4px solid var(--amber);
+        }
+
+        .profile-card h3 {
+            color: var(--navy);
+            font-size: 20px;
+            margin-bottom: 18px;
+        }
+
+        .profile-detail {
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .profile-detail:last-child {
+            border-bottom: none;
+        }
+
+        .profile-detail small {
+            display: block;
+            color: var(--grey);
+            font-size: 11px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .profile-detail span {
+            display: block;
+            color: var(--navy);
+            font-size: 14px;
+            font-weight: 600;
+            overflow-wrap: anywhere;
+        }
+
+        /* Career highlights */
+        .highlights {
+            background: var(--light);
+        }
+
+        .highlight-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .highlight-card {
+            background: var(--white);
+            padding: 27px;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+        }
+
+        .highlight-card .number {
+            color: #b77d00;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .highlight-card h3 {
+            color: var(--navy);
+            font-size: 17px;
+            margin: 8px 0;
+        }
+
+        .highlight-card p {
+            color: var(--grey);
+            font-size: 14px;
+        }
+
+        /* Professional approach */
+        .approach-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .approach-item {
+            padding: 22px;
+            border-left: 4px solid var(--amber);
+            background: #f8fafc;
+        }
+
+        .approach-item h3 {
+            color: var(--navy);
+            margin-bottom: 7px;
+            font-size: 17px;
+        }
+
+        .approach-item p {
+            color: var(--grey);
+            font-size: 14px;
+        }
+
+        /* Career objective */
+        .objective {
+            background: var(--navy);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .objective h2 {
+            font-size: 29px;
+            margin-bottom: 18px;
+        }
+
+        .objective p {
+            max-width: 800px;
+            margin: auto;
+            color: #d5dfeb;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: var(--amber);
+            color: var(--navy);
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #ffc233;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            background: #071626;
+            color: #cbd5e1;
+            text-align: center;
+            padding: 25px 0;
+            font-size: 13px;
+        }
+
+        footer span {
+            color: var(--amber);
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 900px) {
+            .nav-links {
+                gap: 11px;
+            }
+
+            .nav-links a {
+                font-size: 11px;
+            }
+        }
+
+        @media (max-width: 760px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 75px;
+                left: 0;
+                width: 100%;
+                background: var(--navy);
+                padding: 20px 5%;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+
+            .nav-links a {
+                font-size: 14px;
+            }
+
+            .page-hero {
+                padding: 65px 0;
+            }
+
+            .page-hero h1 {
+                font-size: 32px;
+            }
+
+            .about-intro,
+            .highlight-grid,
+            .approach-grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 55px 0;
+            }
+
+            .section-heading h2 {
+                font-size: 25px;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="../assets/styles/main.css">
+    </head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="container navbar">
+
+            <a href="../index.html" class="logo">
+                STANDFAST<span>.</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Me</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="competencies.html">Competencies</a></li>
+                <li><a href="equipment.html">Equipment</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="certifications.html">Training</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="eyebrow">Get to Know Me</div>
+            <h1>About Me</h1>
+            <p>
+                A dedicated Oil and Gas Field Operator with practical experience
+                in production operations, equipment reliability, process monitoring
+                and safe plant operations.
+            </p>
+        </div>
+    </section>
+
+    <!-- Professional Introduction -->
+    <section>
+        <div class="container about-intro">
+
+            <div class="about-text">
+                <div class="section-heading">
+                    <div class="eyebrow">Professional Profile</div>
+                    <h2>Who I Am</h2>
+                </div>
+
+                <p>
+                    My name is <strong>Standfast Tonye Bluejack</strong>.
+                    I am an Oil and Gas Field Operator with over seven years
+                    of industry experience across production operations and
+                    plant environments.
+                </p>
+
+                <p>
+                    My professional experience includes production monitoring,
+                    S&W testing, process parameter adjustment, equipment
+                    isolation and de-isolation, operational troubleshooting,
+                    Process Plant Black Start activities, and preventive
+                    maintenance routines on Open and Closed Drain Systems.
+                </p>
+
+                <p>
+                    Throughout my career, I have worked in operational
+                    environments associated with Seplat Energy and ExxonMobil,
+                    supporting safe and reliable production activities while
+                    coordinating with Control Room Operators, maintenance
+                    personnel and other operations team members.
+                </p>
+
+                <p>
+                    I also gained electrical project experience at the
+                    <strong>NLNG Plant, Train 5</strong>, where I supported
+                    electrical installation activities, earthing systems,
+                    cable work, inspections and troubleshooting in line
+                    with project requirements and site HSE standards.
+                </p>
+
+                <p>
+                    I am committed to safe work practices, continuous learning,
+                    operational discipline and effective teamwork. I take
+                    pride in identifying abnormal operating conditions,
+                    communicating issues clearly and supporting actions
+                    that contribute to stable facility operations.
+                </p>
+            </div>
+
+            <!-- Professional Details -->
+            <aside class="profile-card">
+                <h3>Professional Details</h3>
+
+                <div class="profile-detail">
+                    <small>Full Name</small>
+                    <span>Standfast Tonye Bluejack</span>
+                </div>
+
+                <div class="profile-detail">
+                    <small>Professional Title</small>
+                    <span>Field Operator</span>
+                </div>
+
+                <div class="profile-detail">
+                    <small>Industry</small>
+                    <span>Oil and Gas</span>
+                </div>
+
+                <div class="profile-detail">
+                    <small>Experience</small>
+                    <span>Over 7 Years</span>
+                </div>
+
+                <div class="profile-detail">
+                    <small>Location</small>
+                    <span>Port Harcourt, Rivers State, Nigeria</span>
+                </div>
+
+                <div class="profile-detail">
+                    <small>Email</small>
+                    <span>bluejackstandfast@gmail.com</span>
+                </div>
+
+                <div class="profile-detail">
+                    <small>Phone</small>
+                    <span>+234 806 738 9156</span>
+                </div>
+            </aside>
+
+        </div>
+    </section>
+
+    <!-- Career Highlights -->
+    <section class="highlights">
+        <div class="container">
+
+            <div class="section-heading">
+                <div class="eyebrow">Career Overview</div>
+                <h2>Professional Highlights</h2>
+                <p>
+                    Key areas of experience and professional exposure
+                    developed throughout my career.
+                </p>
+            </div>
+
+            <div class="highlight-grid">
+
+                <div class="highlight-card">
+                    <div class="number">7+</div>
+                    <h3>Years of Industry Experience</h3>
+                    <p>
+                        Experience across oil and gas production operations,
+                        plant environments and electrical project activities.
+                    </p>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="number">3</div>
+                    <h3>Field Operator Roles</h3>
+                    <p>
+                        Operational experience in roles associated with
+                        Seplat Energy and ExxonMobil facilities.
+                    </p>
+                </div>
+
+                <div class="highlight-card">
+                    <div class="number">1</div>
+                    <h3>NLNG Train 5 Project</h3>
+                    <p>
+                        Electrical project experience involving installation
+                        support, cable work and earthing systems.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Approach -->
+    <section>
+        <div class="container">
+
+            <div class="section-heading">
+                <div class="eyebrow">How I Work</div>
+                <h2>My Professional Approach</h2>
+                <p>
+                    The principles that guide my contribution to daily
+                    operations and team performance.
+                </p>
+            </div>
+
+            <div class="approach-grid">
+
+                <div class="approach-item">
+                    <h3>Safety First</h3>
+                    <p>
+                        I follow site safety requirements, operating procedures
+                        and permit controls while maintaining awareness of
+                        workplace hazards and operational risks.
+                    </p>
+                </div>
+
+                <div class="approach-item">
+                    <h3>Operational Reliability</h3>
+                    <p>
+                        I support stable production through equipment
+                        monitoring, field inspections, process checks
+                        and timely reporting of abnormalities.
+                    </p>
+                </div>
+
+                <div class="approach-item">
+                    <h3>Team Collaboration</h3>
+                    <p>
+                        I work with Control Room Operators, maintenance
+                        personnel and other operations team members to
+                        support effective coordination and communication.
+                    </p>
+                </div>
+
+                <div class="approach-item">
+                    <h3>Continuous Improvement</h3>
+                    <p>
+                        I value professional development, technical learning
+                        and opportunities to improve my operational knowledge
+                        and practical skills.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Objective -->
+    <section class="objective">
+        <div class="container">
+
+            <h2>My Career Objective</h2>
+
+            <p>
+                To contribute my oil and gas operational experience,
+                technical knowledge and safety-focused mindset to an
+                organisation committed to safe, efficient and reliable
+                production operations. I am interested in opportunities
+                where I can continue developing professionally while
+                contributing positively to operational performance.
+            </p>
+
+            <a href="experience.html" class="button">
+                View My Experience
+            </a>
+
+            <a href="contact.html" class="button">
+                Contact Me
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>
+                &copy; <span id="year"></span>
+                Standfast Tonye Bluejack.
+                All Rights Reserved.
+            </p>
+            <p>Field Operator | Oil and Gas Production Operations</p>
+        </div>
+    </footer>
+    <script src="../assets/scripts/main.js" defer></script>
+</body>
+</html>
